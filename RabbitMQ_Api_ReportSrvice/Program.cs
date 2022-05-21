@@ -22,6 +22,7 @@ builder.Services.AddSingleton<ISubscriber>(x => new Subscriber(x.GetService<ICon
 builder.Services.AddSingleton<IMemoryReportStorage, MemoryReportStorage>();
 builder.Services.AddHostedService<ReportDataCollector>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
